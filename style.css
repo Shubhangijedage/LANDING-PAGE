@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1558861122-40aa75d3a841?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+   background-color: rgba(255, 182, 193, 0.44);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: black;
+    bottom: 6vh;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+    padding-top: 0 40vh;
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 12px;
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1{
+    width: 60%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1615488913817-095134dfeb54?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.b1 h1{
+      text-align: left;
+      padding: 30px;
+      color: white;
+}
+.b1 p{
+    color: white;
+    text-align: left;
+    padding: 15px;
+}
+.b2{
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 35vh;
+    background-image: url(https://images.unsplash.com/photo-1603912699214-92627f304eb6?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    color: white;
+    text-align: left;
+    padding: 30px;
+}
+.b2 .up p{
+    color: white;
+    text-align: 30px;
+    padding: 15px;
+}
+.b2 .down{
+    color: white;
+    width: 100%;
+    min-height: 40vh;
+    background-image: url(https://media.istockphoto.com/id/973089370/photo/cropped-image-of-customer-giving-florist-credit-card-to-pay-for-bouquet.jpg?s=2048x2048&w=is&k=20&c=LbzddF8dzhZGK7d68UP2V_yUne6uUWB66eeFhOuDj-o=);
+    background-position: center;
+
+}
+.b2 .down .overlay{
+    position: relative;
+    width: 200%;
+    min-height: 20vh;
+    background-color:rgba(255, 255, 255, 0.116);
+}
+.b3{
+    width: 100%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1593343352582-20b62e004a0f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: right;
+    margin-right: 100;
+    height: 100%;
+    padding: 4vw 3vh;
+}
+.b3 .overlay p{
+    padding:1.2vh;
+    color:white;
+}
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text image{
+        height:200px;
+        width: 20px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin: 10px;
+    }
+    .icon{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        background-position: right;
+        min-height: 30vh;
+    }
+}
